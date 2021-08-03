@@ -927,7 +927,7 @@ pre {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%; }
+    max-width: 50%; }
   .order-md-first {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
@@ -7298,13 +7298,13 @@ button.bg-dark:focus {
     padding: 3rem !important; }
   .pt-md-5,
   .py-md-5 {
-    padding-top: 3rem !important; }
+    padding-top: 0rem !important; }
   .pr-md-5,
   .px-md-5 {
     padding-right: 3rem !important; }
   .pb-md-5,
   .py-md-5 {
-    padding-bottom: 3rem !important; }
+    padding-bottom: 0rem !important; }
   .pl-md-5,
   .px-md-5 {
     padding-left: 3rem !important; }
@@ -8427,18 +8427,28 @@ h1, h2, h3, h4, h5,
       .owl-carousel .owl-dots .owl-dot.active {
         background: #b3b3b3; }
   .owl-carousel.home-slider {
+    
     position: relative;
     height: 750px;
     z-index: 0; }
     .owl-carousel.home-slider .slider-item {
+      
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position:inherit;
       height: 750px;
-      position: relative;
+      position:relative;
       z-index: 0; }
       @media (max-width: 1199.98px) {
         .owl-carousel.home-slider .slider-item {
+          -moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
           background-position: center center !important; } }
       .owl-carousel.home-slider .slider-item .overlay {
         position: absolute;
@@ -9001,7 +9011,7 @@ h1, h2, h3, h4, h5,
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease; }
     .project .text h3 {
-      font-size: 20px;
+      font-size: 30 px;
       font-weight: 600; }
       .project .text h3 a {
         color: #fff; }
